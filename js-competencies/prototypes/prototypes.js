@@ -1,10 +1,14 @@
-
 //////////////////PROBLEM 1////////////////////
 
 //Create a prototype for a String called reverse that returns the string but, like, reversed.
 
-//Code here
-
+String.prototype.reverse = function (str) {
+  let newString = "";
+  for (i = this.str.length - 1; i >= 0; i--) {
+    newString += this.str[i];
+  }
+  return newString;
+};
 
 //////////////////PROBLEM 2////////////////////
 
@@ -21,5 +25,16 @@ function Person(name, age) {
   this.qualityOfCode = 5;
 }
 
-//Code here
+Person.prototype.drinkCoffee = function () {
+  this.energy += 10;
+  this.linesOfCode += 50;
+  this.qualityOfCode -= 1;
+  return this;
+};
 
+Person.prototype.readDocumentation = function () {
+  this.energy = this.energy + 20;
+  this.linesOfCode = this.linesOfCode - 30;
+  this.qualityOfCode = this.qualityOfCode - 3;
+  return this;
+};

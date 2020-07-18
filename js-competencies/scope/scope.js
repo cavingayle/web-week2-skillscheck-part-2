@@ -10,7 +10,7 @@ var functionOne = () => console.log('functionOne', this)
 
 //What is "this" in functionOne?
 
-// var answerOne = "window"
+ var answerOne = "window"
 // var answerOne = "functionOne"
 // var answerOne = "scope-closures.js"
 
@@ -21,7 +21,7 @@ function functionTwo() {
 
 //What is "this" in functionTwo?
 
-// var answerTwo = "window"
+var answerTwo = "window"
 // var answerTwo = "functionTwo"
 // var answerTwo = "scope-closures.js"
   
@@ -36,7 +36,7 @@ var myObj = {
 
 //What is "this" in functionThree?
  
-// var answerThree = "window"
+ var answerThree = "window"
 // var answerThree = "myObj"
 // var answerThree = "myObj.methods"
 // var answerThree = "scope-closures.js"
@@ -44,8 +44,8 @@ var myObj = {
 //What is "this" in functionFour?
 
 // var answerFour = "window"
-// var answerFour = "myObj"
-// var answerFour = "myObj.methods"
+ // var answerFour = "myObj"
+ var answerFour = "myObj.methods"
 // var answerFour = "scope-closures.js"
 
 
@@ -87,7 +87,7 @@ function greekUnderworld(season){
 //REMOVE THE NAMES OF THE VARIABLES THAT DO NOT BELONG
 
 //This array should only contain variables accessible in global scope
-var greekGlobalScope = ["hades", "zeus", "olympians", "hera", "gatekeeper", "response", "persephone"]
+var greekGlobalScope = ["hades"]
 
 //This array should only contain variables accessible in scope of the 
 //function greekPantheon
